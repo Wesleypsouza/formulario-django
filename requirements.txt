@@ -1,0 +1,11 @@
+asgiref==3.4.1
+Django==4.0.1
+django-bootstrap-form==3.4
+et-xmlfile==1.1.0
+jdcal==1.4.1
+openpyxl==2.6.0
+random-string==1.0
+random-text-generator==1.1.0
+sqlparse==0.4.2
+tzdata==2021.5
+url64==0.1.0
