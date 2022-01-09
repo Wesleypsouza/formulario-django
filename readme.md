@@ -25,5 +25,9 @@ pip install -r requirements.txt
 ## Execucao
 
 ```
+python manage.py makemigrations cadastro
+python manage.py migrate cadastro
+python manage.py makemigrations
+python manage.py migrate
 python manage.py runserver
 ```
