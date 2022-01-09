@@ -1,0 +1,100 @@
+*{ margin:0; padding:0;}
+
+body{ font:100% normal Arial, Helvetica, sans-serif; background:#161712;}
+
+form,input,select,textarea{margin:0; padding:0; color:#ffffff;}
+
+div.box {
+    margin:250px auto;
+    width:500px;
+    background:#222222;
+    position:relative;
+    top:50px;
+    border:1px solid #262626;
+}
+
+div.box h1 {
+    color:#ffffff;
+    font-size:20px;
+    text-align: center;
+    padding:5px 0 5px 5px;
+    border-bottom:1px solid #161712;
+    border-top:1px solid #161712;
+}
+
+div.box label {
+    width:100%;
+    display: block;
+    background:#1C1C1C;
+    border-top:1px solid #262626;
+    border-bottom:1px solid #161712;
+    padding:10px 0 10px 0;
+}
+
+div.box label span {
+    display: block;
+    color:#bbbbbb;
+    font-size:12px;
+    float:left;
+    width:100px;
+    text-align:right;
+    padding:5px 20px 0 0;
+}
+
+div.box .input_text {
+    padding:10px 10px;
+    width:200px;
+    background:#262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #333333;
+    border-right:1px double #333333;
+}
+
+div.box .message{
+    padding:7px 7px;
+    width:350px;
+    background:#262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #333333;
+    border-right:1px double #333333;
+    overflow:hidden;
+    height:150px;
+}
+
+div.box .button{
+    text-align: center;
+    /* margin:0 0 30px 0; */
+    padding:4px 7px;
+    background:#CC0000;
+    border:0px;
+    /* position: relative; */
+    top:15px;
+    /* left:135px; */
+    width:100px;
+    display: inline;
+    margin: 10px 10px 10px 0;
+}
+
+div.box .button1{
+    text-align: center;
+    /* margin:0 0 30px 0; */
+    padding:4px 7px;
+    background:#CC0000;
+    border:0px;
+    /* position: relative; */
+    top:15px;
+    /* left:200px; */
+    width:100px;
+    display: inline;
+    margin: 10px 10px 10px 0;
+}
+
+div.botoes {
+    margin: 0 auto;
+    width: 400px;
+    /* border: solid 1px red; */
+    display: flex;
+    justify-content: center;
+}
