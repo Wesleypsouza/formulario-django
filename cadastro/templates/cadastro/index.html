@@ -6,36 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
+    {% load widget_tweaks %}
     <link rel="stylesheet" href="{% static 'cadastro/style.css' %}">
     <title>Formulario</title>
 </head>
 
 <body>
-    <form name="meuForm" method="post" id="formulario">
+    <form action="/cadastro/" name="cadastro" method="post" id="formulario">
         <div class="box">
             <h1>FORMULÁRIO</h1>
             <label>
                 <span>EMAIL</span>
-                <input type="text" class="input_text" name="email" id="email" required />
+                {% render_field form.email class="input_text" type="email" name="cadastro" placeholder="Digite seu email" id="campoemail" %}
             </label>
 
             <label>
                 <span>SENHA</span>
-                <input type="text" class="input_text" name="assunto" id="subject" placeholder="GERA-AUTOMATICAMENTE" />
+                {% render_field form.senha class="input_text" type="password" name="cadastro" placeholder="GERA-AUTOMATICAMENTE" %}
             </label>
 
             <label>
                 <span>DATA DE NASCIMENTO</span>
-                <input type="date" id="data" name="data" required><br>
+                {% render_field form.nascimento class="input_text" type="date" name="cadastro" id="campodata" %}<br>
             </label>
             <label>
                 <div class="botoes">
-                    <input type="button" class="button1" value="CADASTRAR" />
-                    <input type="button" class="button" value="BAIXAR" />
+                    <input type="submit" class="button1" value="CADASTRAR" />
+                    {% if users %}
+                    <input type="submit" class="button" id="botaobaixar" value="BAIXAR" />
+                    {% endif %}
                 </div>
             </label>
         </div>
     </form>
+    <script src="{% static 'cadastro/logic.js' %}"></script>
 </body>
 
 </html>
