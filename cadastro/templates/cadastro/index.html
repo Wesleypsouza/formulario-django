@@ -1,37 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'cadastro/css/style.css' %}">
-    <title>Ficha de Cadastro</title>
-</head>
-<body>
-    <div class="hero" style="background-image: url({% static 'cadastro/img/background.png' %});">
-        <div class="navbar">
-            <img src="{% static 'cadastro/img/logo.png' %}">
-            <button type="button">sing Up</button>
-        </div>
-        <div class="content">
-            <small>Welcome to our</small>
-            <h1>Word's<br>Creative Studio</h1>
-            <button type="button">Take a Tour</button>
-        </div>
-        <div class="side-bar">
-            <img src="{% static 'cadastro/img/menu.png' %}">
+{% extends 'base.html' %}
 
-            <div class="social-links">
-                <img src="{% static 'cadastro/img/fb.png' %}">
-                <img src="{% static 'cadastro/img/ig.png' %}">
-                <img src="{% static 'cadastro/img/tw.png' %}">
-            </div>
-            <div class="useful-links">
-                <img src="{% static 'cadastro/img/share.png' %}">
-                <img src="{% static 'cadastro/img/info.png' %}">
-            </div>
+{% block body %}
+{% load static %}
+<div class="hero" style="background-image: url({% static 'cadastro/img/background.png' %});">
+    <div class="navbar">
+        <img src="{% static 'cadastro/img/logo.png' %}">
+        <button type="button">sing Up</button>
+    </div>
+    <div class="content">
+        <small>Welcome to our</small>
+        <h1>Word's<br>Creative Studio</h1>
+        <button type="button">Take a Tour</button>
+    </div>
+    <div class="side-bar">
+        <img src="{% static 'cadastro/img/menu.png' %}">
+
+        <div class="social-links">
+            <img src="{% static 'cadastro/img/fb.png' %}">
+            <img src="{% static 'cadastro/img/ig.png' %}">
+            <img src="{% static 'cadastro/img/tw.png' %}">
+        </div>
+        <div class="useful-links">
+            <img src="{% static 'cadastro/img/share.png' %}">
+            <img src="{% static 'cadastro/img/info.png' %}">
         </div>
     </div>
-</body>
-</html>
+</div>
+{% endblock %}
