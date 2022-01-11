@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    {% load widget_tweaks %}
+    <link rel="stylesheet" href="{% static 'cadastro/css/style_cadastro.css' %}">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="/cadastro/" name="cadastro" method="post" id="formulario">
+        <div class="box">
+            <h1>FORMULÁRIO</h1>
+            <label>
+                <span>EMAIL</span>
+                {% render_field form.email class="input_text" type="email" name="cadastro" placeholder="Digite seu email" id="campoemail" %}
+            </label>
+
+            <label>
+                <span>SENHA</span>
+                {% render_field form.senha class="input_text" type="password" name="cadastro" placeholder="GERA-AUTOMATICAMENTE" %}
+            </label>
+
+            <label>
+                <span>DATA DE NASCIMENTO</span>
+                {% render_field form.nascimento class="input_text" type="date" name="cadastro" id="campodata" %}<br>
+            </label>
+            <label>
+                <div class="botoes">
+                    <input type="submit" class="button1" value="CADASTRAR" />
+                    {% if users %}
+                    <input type="submit" class="button" id="botaobaixar" value="BAIXAR" />
+                    {% endif %}
+                </div>
+            </label>
+        </div>
+    </form>
+    <script src="{% static 'cadastro/js/logic.js' %}"></script>
+</body>
+
+</html>
